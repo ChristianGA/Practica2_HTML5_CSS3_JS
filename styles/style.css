@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+@font-face{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+}
+
+.title {
+	position: absolute;
+    left: 0;
+    top: 65%;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    font-family: 'Open Sans';
+    z-index: 1;
+}
+
+.title-cite {
+    position: absolute;
+    left: 0;
+    top: 60%;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    font-family: 'Open Sans';
+
+}
+.navbar{
+	background-color: cadetblue;
+	width: 100%;
+    position: absolute;
+    top: 0;
+}
+.navbar > .navbar-list {
+    list-style-type: none;
+    margin: 0;
+    float: right;
+    font-size: 0;/*truco para que no exista separación blanca. Aquí = 0 y en el hijo el valor que queramos del tamaño de la fuente.*/
+}
+.navbar > .navbar-list > .navbar-item{
+	display: inline-block;
+    font-size: 16px; /*aquí el valor del tamaño que queremos */
+}
+.navbar > .navbar-list > .navbar-item a {
+    padding: 20px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.9);
+    display: inline-block;
+}
+.navbar > .navbar-list > .navbar-item.active a {
+    color: #FF0004;
+    background-color: #FFE900;
+}
+
+.navbar > .navbar-list > .navbar-item a:hover {
+    color: #FF0004;
+    background-color: #FFE900;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.92);
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
