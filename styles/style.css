@@ -8,14 +8,44 @@
 	font-size: 12px;
 }
 
-.container, .header{
+.about-me{
+	order: 4;
+}
+
+.career{
+	text-align: center;
+	order: 2;
+}
+
+.container{
 	display: flex;
 	flex-direction: column;
 }
 
+.flip-img {
+	position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: transform 1s;
+}
+
+.back {
+    transform: rotateX(-180deg);
+    -webkit-transform: rotateX(-180deg);
+}
+
+.logo-est-1:hover .front {
+    transform: rotateX();
+    -webkit-transform: rotateX(-180deg);
+}
+
+.logo-est-1:hover .back {
+    transform: rotateX(0);
+    -webkit-transform: rotateX(0);
+}
+
 .footer {
-    position: absolute;
-	background-color: rgba(0, 0, 0, 0.92);
+    background-color: rgba(0, 0, 0, 0.92);
     color: white;
     height: 50px;
     display: flex;
@@ -25,6 +55,15 @@
 
 h3, h4{
 	text-align: center;
+}
+
+.header{
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../images/cielo.jpg);
+	height: 100vh;
+    transition: background-size 0.5s;
 }
 
 .job1{
@@ -72,16 +111,54 @@ h3, h4{
 	width: auto;
 }
 
-.logo-university > img{
-	height: 100px;
+.logo-trab-1{
+	max-width: 100px;
+	max-height: 100px;
+}
+
+.logo-trab-2{
+	
+}
+
+.logo-trab-3{
+	
+}
+
+.logo-trab-4{
+	
+}
+
+.logo-trab-5{
+	
+}
+
+.logo-university img{
+	height: 125px;
 	width: auto;
+}
+
+.logo-est-1{
+	position: relative;
+	transition: all 1s ease;
+	transform: perspective(600px);
+	transform-origin: 100% 50%;
+	transform-style: preserve-3d;
+}
+
+.logo-est-2{
+	
+}
+
+.logo-est-3{
+	
 }
 
 .navbar{
 	background-color: cadetblue;
 	width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
+	z-index: 1;
 }
 .navbar > .navbar-list {
     list-style-type: none;
@@ -98,6 +175,7 @@ h3, h4{
     text-decoration: none;
     color: rgba(0, 0, 0, 0.9);
     display: inline-block;
+	transition: all 0.3s linear;
 }
 .navbar > .navbar-list > .navbar-item.active a {
     color: #FF0004;
@@ -115,13 +193,8 @@ h3, h4{
 }
 
 .row-jobs{
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-}
-
-.row-studies{
-	flex-direction: row;
+	display: flex;
+	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
 }
@@ -138,28 +211,50 @@ h3, h4{
     margin-right: calc(50% - 50vw);
 }
 
-.study1{
+.studies{
+	order: 2;
 	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.study1{
 	order: 1;
+	display: flex;
 	flex-direction: column;
 	align-items: center;
     justify-content: center;
+	flex-wrap: wrap;
+	background-color: antiquewhite;
+	
+}
+
+.study1 img{
+	display: block;
+	margin: auto;
 }
 
 .study2{
-	display: flex;
 	order: 2;
+	display: flex;
 	flex-direction: column;
 	align-items: center;
     justify-content: center;
+	flex-wrap: wrap;
+	background-color: antiquewhite;
+	
 }
 
 .study3{
-	display: flex;
 	order: 3;
+	display: flex;
 	flex-direction: column;
 	align-items: center;
     justify-content: center;
+	flex-wrap: wrap;
+	
 }
 
 .title {
@@ -187,11 +282,22 @@ h3, h4{
 
 .university{
 	text-align: center;
+	order: 1;
 }
 
 .who{
+	order: 1;
 	display: flex;
 	flex-direction: row;
 	align-content: space-around;
+}
+
+.work-experience{
+	order: 3;
+	display: flex;
+	flex-direction: row;
+	align-content: space-around;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
