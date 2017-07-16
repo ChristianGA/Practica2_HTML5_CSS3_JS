@@ -13,59 +13,56 @@
 
 <body>
 
-	<header class="header">
+	<header id="#" class="header">
            <h1 class="title">Christian Gallego</h1>
            <div class="title-img"></div>
-           <p class="title-cite">Mi web desarrollado con las últimas tecnologías web</p>
+           <p class="title-cite">Mi CV desarrollado con las últimas (o casi) tecnologías web</p>
     </header>
     
     <nav class="navbar">
             <ul class="navbar-list">
                 <li class="navbar-item active">
-                    <a href>Portada</a>
+                    <a href="#">Portada</a>
                 </li>
                 <li class="navbar-item">
-                    <a href>Quién soy</a>
+                    <a href="#quiensoy">Quién soy</a>
                 </li>
                 <li class="navbar-item">
-                    <a href>Estudios</a>
+                    <a href="#estudios">Estudios</a>
                 </li>
                 <li class="navbar-item">
-                    <a href>Experiencia</a>
+                    <a href="#experiencia">Experiencia</a>
                 </li>
                 <li class="navbar-item">
-                    <a href>Sobre mi</a>
+                    <a href="#sobremi">Sobre mi</a>
                 </li>
                 <li class="navbar-item">
                     <a href="contact.html">Contacto</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="tasks.html">Tareas</a>
                 </li>
             </ul>
      </nav>
      
      <main class="container">	
-     	<section class="who">
-     		<div class="col-12">
+     	<section class="who section-container" id="quiensoy">
      			<figure class="photo-me">
      				<img src="./images/me.jpg" alt="Foto Christian">
      			</figure>
-     		</div>
-     		<div class="col-12">
-     				<article class="whoami">
-     					<header>
-                            <h3>
-                              Un poco sobre mi
-                            </h3>
-                        </header>
-                        <h1 class="whoami-text"> Lorem fistrum de la pradera fistro jarl no puedor hasta luego Lucas amatomaa me cago en tus muelas torpedo tiene musho peligro. No te digo trigo por no llamarte Rodrigor hasta luego Lucas qué dise usteer ese hombree la caidita pupita se calle ustée está la cosa muy malar me cago en tus muelas. Pecador condemor jarl benemeritaar tiene musho peligro sexuarl.</h1>
-                    </article>
-     		</div>
+     			<article class="whoami">
+     				<header>
+                       <h3>¿Quién soy?</h3>
+                    </header>
+                    <h1 class="whoami-text"> Lorem fistrum de la pradera fistro jarl no puedor hasta luego Lucas amatomaa me cago en tus muelas torpedo tiene musho peligro. No te digo trigo por no llamarte Rodrigor hasta luego Lucas qué dise usteer ese hombree la caidita pupita se calle ustée está la cosa muy malar me cago en tus muelas. Pecador condemor jarl benemeritaar tiene musho peligro sexuarl.</h1>
+                </article>
      	</section>
      	
-     	<section class="studies">
-     				<article class="study1 col-4">
+     	<section class="studies section-reverse section-container" id="estudios">
+     				<article class="study1">
      					<header>
                             <h3>
-                              ICAI
+                              ICAI - 
                               <span class="university">Universidad Pontificia Comillas</span>
                             </h3>
                             <h4 class="career">Ingeniero Superior Industrial</h4>
@@ -75,40 +72,38 @@
                                         <img src="./images/icai.png" alt="ICAI">
                                     </div>
                                     <div class="back flip-img">
-                                        <img src="./images/icai2.jpg" alt="ICAI">
+                                        <img src="./images/icai2.png" alt="ICAI">
                                     </div>
                         </figure>
                     </article>
 
-     				<article class="study2 col-4">
+     				<article class="study2">
      					<header>
                             <h3>
-                              KC
                               <span class="university">Keep Coding</span>
                             </h3>
-                            <h4 class="career">Fullstack Developer</h4>
+                            <h4 class="career">Fullstack Developer (cursando)</h4>
                         </header>
                         <figure class="logo-university logo-est-2">
                             <img src="./images/keepcoding.png" alt="KeepCoding">
                         </figure>
                     </article>
      			
-     				<article class="study3 col-4">
+     				<article class="study3">
      					<header>
                             <h3>
-                              Otros cursos
                               <span class="university">Cursos independientes</span>
                             </h3>
                             <h4 class="career">Certificados</h4>
                         </header>
                         <figure class="logo-university logo-est-3">
-                            <img src="./images/keepcoding.png" alt="Cursos Independientes">
+                            <img src="./images/coursera.jpeg" alt="Cursos Independientes">
                         </figure>
                     </article>
      	</section>
      	
-     	<section class="work-experience section-reverse section-container">
-     				<article class="job1 col-3">
+     	<section class="work-experience section-reverse section-container" id="experiencia">
+     				<article class="job1">
      					<header>
                             <h3>
                               Chequemotiva
@@ -116,83 +111,78 @@
                             </h3>
                             <h4 class="position">IT Project Manager</h4>
                         </header>
-                        <figure class="logo-job">
-                            <!--<a href="http://chequemotiva.com" target="_blank" class="logo-trab-1">--><img src="./images/Chequemotiva.png" alt="Chequemotiva"><!-- </a> -->
+                        <figure class="logo-job logo-trab-1">
+                            <a href="http://chequemotiva.com" target="_blank" ><img src="./images/Chequemotiva.png" alt="Chequemotiva"></a>
                         </figure>
                     </article>  		
  
-     				<article class="job2 col-3">
+     				<article class="job2">
      					<header>
                             <h3>
-                              Prosegur
                               <span class="company">Prosegur Global Alarmas</span>
                             </h3>
                             <h4 class="position">IT Project Manager</h4>
                         </header>
                         <figure class="logo-job logo-trab-2">
-                            <img src="./images/prosegur.jpg" alt="Prosegur">
+                            <a href="http://prosegur.es" target="_blank"><img src="./images/prosegur.jpeg" alt="Prosegur"></a>
                         </figure>
                     </article>
 
-     				<article class="job3 col-3">
+     				<article class="job3">
      					<header>
                             <h3>
-                              BQ
-                              <span class="company">Mundoreaders</span>
+                              <span class="company">BQ</span>
                             </h3>
                             <h4 class="position">R&amp;D Project Manager</h4>
                         </header>
                         <figure class="logo-job logo-trab-3">
-                            <img src="./images/bq.jpg" alt="BQ">
+                            <a href="http://bq.com" target="_blank"><img src="./images/bq.jpg" alt="BQ"></a>
                         </figure>
                         
                     </article>
-     				<article class="job4 col-3">
+     				<article class="job4">
      					<header>
                             <h3>
-                              Bombardier
                               <span class="company">Bombardier Transportation</span>
                             </h3>
                             <h4 class="position">PMO Specialist</h4>
                         </header>
                         <figure class="logo-job logo-trab-4">
-                            <img src="./images/bombardier.jpg" alt="Bombardier">
+                            <a href="http://bombardier.com" target="_blank"><img src="./images/bombardier.jpg" alt="Bombardier"></a>
                         </figure>
                     </article>
 
-     				<article class="job5 col-3">
+     				<article class="job5">
      					<header>
                             <h3>
-                              Comunidad de Madrid
+                              Comunidad de Madrid <br>
                               <span class="company">por el Instituto de Investigación Tecnológica</span>
                             </h3>
                             <h4 class="position">Scholarship</h4>
                         </header>
                         <figure class="logo-job logo-trab-5">
-                            <img src="./images/comunidad_de_madrid.png" alt="Comunidad de Madrid">
+                            <a href="https://www.citsem.upm.es/index.php/es/proyectos-es?view=project&task=show&id=40" target="_blank"><img src="./images/comunidad_de_madrid.png" alt="Comunidad de Madrid"></a>
                         </figure>
                     </article>
 
      	</section>
      	
-     	<section class="about-me">
+     	<section class="about-me" id="sobremi">
+     		<h3 class="about-me-header">Algo sobre mi</h3>
      		<div class="video-about-me">
      			<video width="550" height="300" controls>
-               		<source src="./video/batman.mp4" type="video/mp4">
+               		<source src="./video/sample.mp4" type="video/mp4">
                 </video>
      		</div>
-     	</section>
-     	
-     	<section class="contact">
-     		
-     		
-     	</section>
-     	
+		 </section>     	
      	
      </main>
      
      <footer class="footer">
-     	Christian Gallego, 2017. Práctica HTML5, CSS3 &amp; JS
+     	<a href="https://www.linkedin.com/in/christiangallego/" target="_blank">Christian Gallego</a>, 2017. Práctica HTML5, CSS3 &amp; JS
      </footer>
 </body>
+	<script src="./js/menu.js"></script>
+  	<script src="./js/jquery-3.2.1.js"></script>
+    <script src="./js/full-screen.js"></script>
 </html>

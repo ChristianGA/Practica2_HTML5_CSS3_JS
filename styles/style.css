@@ -10,17 +10,67 @@
 
 .about-me{
 	order: 4;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.about-me-header{
+	order: 1;
+}
+
+.video-about-me{
+	order: 2;
 }
 
 .career{
 	text-align: center;
+	color: darkgrey;
 	order: 2;
+}
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.contact{
+	display: flex;
+	flex-direction: column;
+	align-content: space-around;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.vista{
+	display: flex;
+	flex-direction: row;
+	align-content: space-around;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.contact > h2{
+	width: 400px;
 }
 
 .container{
 	display: flex;
 	flex-direction: column;
 }
+
+.container2{
+	display: flex;
+	flex-direction: row;
+	align-content: space-around;
+	justify-content: space-around;
+}
+
 
 .flip-img {
 	position: absolute;
@@ -31,21 +81,21 @@
 
 .back {
     transform: rotateX(-180deg);
-    -webkit-transform: rotateX(-180deg);
+    -webkit-transform: rotateY(-180deg);
 }
 
 .logo-est-1:hover .front {
-    transform: rotateX();
-    -webkit-transform: rotateX(-180deg);
+    transform: rotateY();
+    -webkit-transform: rotateY(-180deg);
 }
 
 .logo-est-1:hover .back {
-    transform: rotateX(0);
-    -webkit-transform: rotateX(0);
+    transform: rotateY(0);
+    -webkit-transform: rotateY(0);
 }
 
 .footer {
-    background-color: rgba(0, 0, 0, 0.92);
+    background-color: #3498db;
     color: white;
     height: 50px;
     display: flex;
@@ -53,17 +103,28 @@
     justify-content: center;
 }
 
-h3, h4{
-	text-align: center;
+.footer > a{
+	text-decoration: none;
+	color: white;
 }
 
-.header{
-	background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url(../images/cielo.jpg);
-	height: 100vh;
-    transition: background-size 0.5s;
+.form {
+	order: 2;
+	display: flex;
+    padding: 0 20px;
+}
+
+.form .form-row {
+    padding: 10px;
+}
+
+.map{
+	order: 1;
+	width: 500px;
+}
+
+h3, h4{
+	text-align: center;
 }
 
 .job1{
@@ -106,55 +167,59 @@ h3, h4{
     justify-content: center;
 }
 
-.logo-job > img{
+.logo-job {
+	height: 125px;
+}
+
+.logo-trab-1 > a > img{
 	height: 100px;
-	width: auto;
 }
 
-.logo-trab-1{
-	max-width: 100px;
-	max-height: 100px;
+.logo-trab-2 > a > img{
+	height: 120px;
 }
 
-.logo-trab-2{
-	
+.logo-trab-3 > a > img{
+	height: 150px;
 }
 
-.logo-trab-3{
-	
+.logo-trab-4 > a > img{
+	height: 130px;
 }
 
-.logo-trab-4{
-	
+.logo-trab-5 > a > img{
+	height: 150px;
 }
 
-.logo-trab-5{
-	
+.logo-university{
+	height: 125px;
 }
 
 .logo-university img{
-	height: 125px;
-	width: auto;
+	
 }
 
 .logo-est-1{
-	position: relative;
-	transition: all 1s ease;
-	transform: perspective(600px);
-	transform-origin: 100% 50%;
-	transform-style: preserve-3d;
+	display: flex;
+	align-content: center;
+	justify-content: center;
 }
 
-.logo-est-2{
-	
+.logo-est-1 img{
+	border-radius: 50%;
+	height: 125px;
 }
 
-.logo-est-3{
-	
+.logo-est-2 img{
+	height: 125px;
+}
+
+.logo-est-3 img{
+	width: 300px;
 }
 
 .navbar{
-	background-color: cadetblue;
+	background-color: #3498db;
 	width: 100%;
     position: fixed;
     top: 0;
@@ -173,23 +238,33 @@ h3, h4{
 .navbar > .navbar-list > .navbar-item a {
     padding: 20px;
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.9);
+    color: white;
     display: inline-block;
 	transition: all 0.3s linear;
 }
 .navbar > .navbar-list > .navbar-item.active a {
-    color: #FF0004;
-    background-color: #FFE900;
+
+    background-color: darkgrey;
 }
 
 .navbar > .navbar-list > .navbar-item a:hover {
-    color: #FF0004;
-    background-color: #FFE900;
+    
+    background-color: darkgrey;
+}
+
+.photo-me{
+	order: 1;
+	display: flex;
 }
 
 .photo-me > img{
 	height: 150px;
-	width: auto;
+	width: 150px;
+	border-radius: 40%;
+}
+
+.position{
+	color: darkgrey;
 }
 
 .row-jobs{
@@ -205,7 +280,7 @@ h3, h4{
 }
 
 .section-reverse {
-    background-color: rgba(220, 220, 220, 0.92);
+    background-color: white;
     color: black;
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
@@ -226,9 +301,7 @@ h3, h4{
 	flex-direction: column;
 	align-items: center;
     justify-content: center;
-	flex-wrap: wrap;
-	background-color: antiquewhite;
-	
+	flex-wrap: wrap;	
 }
 
 .study1 img{
@@ -242,9 +315,7 @@ h3, h4{
 	flex-direction: column;
 	align-items: center;
     justify-content: center;
-	flex-wrap: wrap;
-	background-color: antiquewhite;
-	
+	flex-wrap: wrap;	
 }
 
 .study3{
@@ -264,9 +335,12 @@ h3, h4{
     width: 100%;
     text-align: center;
     font-size: 40px;
-    color: black;
+    color: #3498db;
     font-family: 'Open Sans';
     z-index: 1;
+	animation: titleAnimation 2s forwards;
+    animation-delay: 0.8s;
+    visibility: hidden;
 }
 
 .title-cite {
@@ -276,8 +350,24 @@ h3, h4{
     width: 100%;
     text-align: center;
     font-size: 20px;
-    color: black;
+    color: #3498db;
     font-family: 'Open Sans';
+	opacity: 0;
+    animation: subtitleAnimation 3s forwards;
+    animation-delay: 1s;
+}
+
+.header > .title-img {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../images/cielo.jpg);
+    height: 100vh;
+    transition: background-size 0.5s;
+}
+
+.header > .title-img:hover {
+    background-size: 115% 115%;
 }
 
 .university{
@@ -290,6 +380,20 @@ h3, h4{
 	display: flex;
 	flex-direction: row;
 	align-content: space-around;
+	justify-content: center;
+	flex-wrap: wrap;
+	border-color: #3498db;
+}
+
+.whoami{
+	order: 2;
+	display: flex;
+	flex-direction: column;
+	width: 50vw;
+}
+
+.whoami-text{
+	
 }
 
 .work-experience{
@@ -301,3 +405,52 @@ h3, h4{
 	flex-wrap: wrap;
 }
 
+#googleMap {
+    height: 400px;
+	width: 400px;
+}
+
+.form {
+    padding: 10px;
+	width: 400px;
+}
+
+.form .form-row {
+    padding: 10px;
+}
+
+input {
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=button], input[type=submit], button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 0px;
+}
+
+button[disabled] {
+    opacity: 0.5;
+}
+
+@keyframes titleAnimation {
+    0% {font-size: 50px;}
+	25% {font-size: 100px;}
+    50% {font-size: 200px;}
+	75% {font-size: 150px;}
+    100% {font-size: 100px;
+          visibility: visible;}
+}
+
+@keyframes subtitleAnimation {
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
