@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 * {
-    font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 @font-face{
 	font-family: 'Open Sans', sans-serif;
@@ -12,13 +12,14 @@
 	order: 4;
 	display: flex;
 	flex-direction: column;
-	align-content: center;
+	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
 }
 
 .about-me-header{
 	order: 1;
+	padding: 5px;
 }
 
 .video-about-me{
@@ -29,6 +30,7 @@
 	text-align: center;
 	color: darkgrey;
 	order: 2;
+	padding: 4px;
 }
 
 .clearfix:after {
@@ -132,7 +134,8 @@ h3, h4{
 	order: 1;
 	flex-direction: column;
 	align-items: center;
-    justify-content: center;
+	justify-content: center;
+	padding: 4px;
 }
 
 .job2{
@@ -140,7 +143,8 @@ h3, h4{
 	order: 2;
 	flex-direction: column;
 	align-items: center;
-    justify-content: center;
+	justify-content: center;
+	padding: 4px;
 }
 
 .job3{
@@ -148,7 +152,8 @@ h3, h4{
 	order: 3;
 	flex-direction: column;
 	align-items: center;
-    justify-content: center;
+	justify-content: center;
+	padding: 4px;
 }
 
 .job4{
@@ -156,7 +161,8 @@ h3, h4{
 	order: 4;
 	flex-direction: column;
 	align-items: center;
-    justify-content: center;
+	justify-content: center;
+	padding: 4px;
 }
 
 .job5{
@@ -164,7 +170,8 @@ h3, h4{
 	order: 5;
 	flex-direction: column;
 	align-items: center;
-    justify-content: center;
+	justify-content: center;
+	padding: 4px;
 }
 
 .logo-job {
@@ -265,6 +272,7 @@ h3, h4{
 
 .position{
 	color: darkgrey;
+	padding: 4px;
 }
 
 .row-jobs{
@@ -275,8 +283,8 @@ h3, h4{
 }
 
 .section-container {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .section-reverse {
@@ -301,7 +309,8 @@ h3, h4{
 	flex-direction: column;
 	align-items: center;
     justify-content: center;
-	flex-wrap: wrap;	
+	flex-wrap: wrap;
+	padding: 4px;	
 }
 
 .study1 img{
@@ -315,7 +324,8 @@ h3, h4{
 	flex-direction: column;
 	align-items: center;
     justify-content: center;
-	flex-wrap: wrap;	
+	flex-wrap: wrap;
+	padding: 4px;	
 }
 
 .study3{
@@ -325,6 +335,7 @@ h3, h4{
 	align-items: center;
     justify-content: center;
 	flex-wrap: wrap;
+	padding: 4px;
 	
 }
 
@@ -373,6 +384,7 @@ h3, h4{
 .university{
 	text-align: center;
 	order: 1;
+	padding: 4px;
 }
 
 .who{
@@ -393,7 +405,7 @@ h3, h4{
 }
 
 .whoami-text{
-	
+	padding: 5px;
 }
 
 .work-experience{

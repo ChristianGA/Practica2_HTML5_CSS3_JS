@@ -27,7 +27,6 @@ var getTasks = function () {
             console.log("Página no encontrada");
         }
     }
-
     XHR.send();
 }
 
@@ -65,11 +64,10 @@ var deleteTask = function (id) {
     XHR.send();
 }
 
-document.getElementById("sendNewTask").addEventListener("click", function (event) {
+var some = document.getElementById("sendNewTask").addEventListener("click", function (event) {
     event.preventDefault();
     createTask(document.getElementById("newTaskName").value);
-})
-
+});
 
 getTasks();
 
